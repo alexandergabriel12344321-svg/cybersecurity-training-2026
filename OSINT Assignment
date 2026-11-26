@@ -1,0 +1,100 @@
+OSINT REPORT
+
+Target: owasp.org
+Organization: OWASP Foundation
+Analyst: Ifeanyi Gabriel Alexander
+Date: 26 November 2026
+
+1. Executive Summary
+
+This report contains a basic OSINT investigation of the OWASP website (owasp.org). The aim was to gather information about the domain, its history and publicly available subdomains without directly attacking or testing the website. Public sources such as WHOIS, the Wayback Machine and crt.sh were used as the main sources of information.
+
+2. Introduction
+
+Objective:
+
+The objective of this investigation is to understand how much information about OWASP can be found online using passive information-gathering techniques.
+
+Scope:
+
+The investigation was limited to passive sources only:
+
+WHOIS – to check domain registration information.
+Wayback Machine – to check previous versions of the website.
+crt.sh – to find subdomains from public certificate records.
+
+Methodology:
+
+The investigation was carried out on 26 November 2026.
+
+The following steps were used:
+
+1. Checked owasp.org using a public WHOIS lookup to find its registration date and registrar.
+2. Checked the Wayback Machine to look for older versions of the website.
+3. Used crt.sh to search for certificates connected to owasp.org and identify possible subdomains.
+4. Reviewed my own public username footprint using my username: [Insert Your Username].
+
+3. Findings
+
+A. Domain Registration
+
+The WHOIS lookup showed the following information:
+
+Domain name: owasp.org
+Registrar: GoDaddy.com, LLC
+Date registered: 21 September 2001
+Expiration date: 21 September 2031
+Nameservers: fay.ns.cloudflare.com and west.ns.cloudflare.com
+
+This shows that the domain has been registered for many years and uses Cloudflare nameservers.
+
+B. Archive History
+
+The Wayback Machine was used to check previous versions of owasp.org.
+
+The archive can help show how the website has changed over time, including changes to its design, pages and content.
+
+The archived versions should be compared with the current website to identify any major changes.
+
+C. Subdomains Discovered
+
+crt.sh was used to search public Certificate Transparency records connected to owasp.org.
+
+Some examples of discovered hostnames include:
+
+docs.owasp.org
+name-virt-host.owasp.org
+
+These names appeared in publicly available certificate records. However, finding a hostname in certificate records does not automatically mean that the subdomain is currently active.
+
+D. My Own Username Footprint
+
+Username searched: @alexsvntvn
+
+The username was checked using publicly available information to see whether it appeared on websites or online platforms.
+
+Findings: No matching public result was found. 
+
+
+4. Analysis
+
+The findings show that OWASP has had its domain for a long time and uses Cloudflare nameservers. This may indicate that the organization uses an established domain and cloud-based services to manage parts of its online presence.
+
+The discovered subdomains may indicate that OWASP uses different web services for different purposes, such as documentation and other website functions.
+
+The archive history may also help identify older pages or information that is no longer available on the current website.
+
+However, these findings do not prove that any system is vulnerable. More investigation would be needed before making such a conclusion.
+
+5. Conclusion and Recommendations
+
+This investigation showed that useful information about an organization can be collected without directly accessing or attacking its systems. WHOIS, the Wayback Machine and crt.sh are useful tools for gathering public information.
+
+Two recommendations for defenders:
+
+1. Regularly review public subdomains and remove or secure any old services that are no longer needed.
+2. Monitor public certificate records and domain information to identify unexpected changes or certificates.
+
+6. Appendices
+
+The following screenshots should be attached as evidence: 
